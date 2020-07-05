@@ -1,0 +1,671 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\worktop\meter_SX501902\software\Project\HT6xxx.uvproj
+Project File Date:  04/15/2020
+
+<h2>Output:</h2>
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Build target 'Target 1'
+compiling main.c...
+..\Main\main.c(34): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+..\Main\main.c:   void LCD_Init();
+..\Main\main.c:        ^
+..\Main\main.c(48): warning:  #1295-D: Deprecated declaration PMU_Init - give arg types
+..\Main\main.c:   void PMU_Init() ;
+..\Main\main.c:        ^
+..\Main\main.c(76): warning:  #1295-D: Deprecated declaration UART_init - give arg types
+..\Main\main.c:   void   UART_init();
+..\Main\main.c:          ^
+..\Main\main.c(77): warning:  #1295-D: Deprecated declaration CMU_Init - give arg types
+..\Main\main.c:   void CMU_Init();
+..\Main\main.c:        ^
+..\Main\main.c(81): warning:  #1295-D: Deprecated declaration GPIO_Init - give arg types
+..\Main\main.c:   void GPIO_Init();
+..\Main\main.c:        ^
+..\Main\main.c(121): warning:  #223-D: function "delay" declared implicitly
+..\Main\main.c:         delay(0xafff);
+..\Main\main.c:         ^
+..\Main\main.c(126): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+..\Main\main.c:         UpdateDisp((unsigned char *)RamData.Disp.DispData);
+..\Main\main.c:                    ^
+..\Main\main.c(148): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+..\Main\main.c:                                 UpdateDisp((unsigned char *)RamData.Disp.DispData);
+..\Main\main.c:                                            ^
+..\Main\main.c(149): warning:  #223-D: function "vol_read" declared implicitly
+..\Main\main.c:                                 vol_read();
+..\Main\main.c:                                 ^
+..\Main\main.c(182): warning:  #223-D: function "vol_read" declared implicitly
+..\Main\main.c:                         Do_Task ( bInt_Ms , vol_read());
+..\Main\main.c:                         ^
+..\Main\main.c(185): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\Main\main.c:                 Hex_BCD(RamData.stdianlian[0].LVSave.SumUse.Use /10,(char *)&RamData.lDianL180)  ;
+..\Main\main.c:                                                                     ^
+..\Main\main.c(186): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\Main\main.c:                 Hex_BCD(RamData.stdianlian[0].LVSave.SumUse.RevUse /10,(char *)&RamData.lDianL280 ) ;
+..\Main\main.c:                                                                        ^
+..\Main\main.c(204): warning:  #111-D: statement is unreachable
+..\Main\main.c:                                         NVIC_SystemReset();     
+..\Main\main.c:                                         ^
+..\Main\main.c(123): warning:  #177-D: label "a3" was declared but never referenced
+..\Main\main.c:         a3:
+..\Main\main.c:         ^
+..\Main\main.c(261): warning:  #223-D: function "delay" declared implicitly
+..\Main\main.c:          delay(0x5fff);
+..\Main\main.c:          ^
+..\Main\main.c(272): warning:  #223-D: function "delay" declared implicitly
+..\Main\main.c:         delay(0x5fff);
+..\Main\main.c:         ^
+..\Main\main.c(285): warning:  #223-D: function "delay" declared implicitly
+..\Main\main.c:         delay(0x5f);
+..\Main\main.c:         ^
+..\Main\main.c(310): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\Main\main.c:         Record_Put (stfilep,(char *)&(RamData.stdianlian[0].LVSave));
+..\Main\main.c:                             ^
+..\Main\main.c(361): warning:  #223-D: function "Inc_Use" declared implicitly
+..\Main\main.c:         SInc = Inc_Use( &RamData.LVSave[0].SumUse, sImp);                               //计算总用电量
+..\Main\main.c:                ^
+..\Main\main.c(322): warning:  #177-D: variable "AInc" was declared but never referenced
+..\Main\main.c:         u32     AInc;
+..\Main\main.c:                 ^
+..\Main\main.c(323): warning:  #177-D: variable "Inc" was declared but never referenced
+..\Main\main.c:         u32     Inc;
+..\Main\main.c:                 ^
+..\Main\main.c(325): warning:  #177-D: variable "cImpbuf" was declared but never referenced
+..\Main\main.c:         u8 cImpbuf;
+..\Main\main.c:            ^
+..\Main\main.c(403): warning:  #223-D: function "Record_Get_First" declared implicitly
+..\Main\main.c:                 ctemp = Record_Get_First (stfilep, stCurr);
+..\Main\main.c:                         ^
+..\Main\main.c(397): warning:  #550-D: variable "ctemp" was set but never used
+..\Main\main.c:           unsigned char ctemp;
+..\Main\main.c:                         ^
+..\Main\main.c(401): warning:  #177-D: variable "lAddr" was declared but never referenced
+..\Main\main.c:                 unsigned long lAddr,lAddr1, lBlockEnd;
+..\Main\main.c:                               ^
+..\Main\main.c(401): warning:  #177-D: variable "lAddr1" was declared but never referenced
+..\Main\main.c:                 unsigned long lAddr,lAddr1, lBlockEnd;
+..\Main\main.c:                                     ^
+..\Main\main.c(401): warning:  #177-D: variable "lBlockEnd" was declared but never referenced
+..\Main\main.c:                 unsigned long lAddr,lAddr1, lBlockEnd;
+..\Main\main.c:                                             ^
+..\Main\main.c(402): warning:  #177-D: variable "i" was declared but never referenced
+..\Main\main.c:                 unsigned short i, j;
+..\Main\main.c:                                ^
+..\Main\main.c(402): warning:  #177-D: variable "j" was declared but never referenced
+..\Main\main.c:                 unsigned short i, j;
+..\Main\main.c:                                   ^
+..\Main\main.c(428): warning:  #144-D: a value of type "unsigned char *" cannot be used to initialize an entity of type "char *"
+..\Main\main.c:                 char    *sp = USARTCOM[_IR_Chanel_].DataBuf ; struct    STDATALIST  *stp =  stdatalist;
+..\Main\main.c:                               ^
+..\Main\main.c(447): warning:  #223-D: function "SystemTick_Interrupt_Off" declared implicitly
+..\Main\main.c:                                                 SystemTick_Interrupt_Off();
+..\Main\main.c:                                                 ^
+..\Main\main.c(454): warning:  #513-D: a value of type "unsigned char *" cannot be assigned to an entity of type "char *"
+..\Main\main.c:                                                 p = (unsigned char *)stp->lData; 
+..\Main\main.c:                                                   ^
+..\Main\main.c(474): warning:  #225-D: the format string ends before this argument
+..\Main\main.c:                         ltemp =fprintf(((FILE *)_Uart_Handle_), "(16)\r\n" , ltemp/1000,ltemp%1000);
+..\Main\main.c:                                                                              ^
+..\Main\main.c(509): warning:  #177-D: variable "iData" was declared but never referenced
+..\Main\main.c:         unsigned  short iData  =  stp->iDataNo;
+..\Main\main.c:                         ^
+..\Main\main.c(552): warning:  #1-D: last line of file ends without a newline
+..\Main\main.c:   }
+..\Main\main.c:    ^
+..\Main\main.c: ..\Main\main.c: 35 warnings, 0 errors
+compiling ht6xxx_it.c...
+..\Main\ht6xxx_it.c(64): warning:  #223-D: function "SystemTick_Interrupt_Off" declared implicitly
+..\Main\ht6xxx_it.c:                            SystemTick_Interrupt_Off();
+..\Main\ht6xxx_it.c:                            ^
+..\Main\ht6xxx_it.c(65): warning:  #223-D: function "OnLine_Dete" declared implicitly
+..\Main\ht6xxx_it.c:                            OnLine_Dete ();
+..\Main\ht6xxx_it.c:                            ^
+..\Main\ht6xxx_it.c(66): warning:  #223-D: function "SystemTick_Interrupt_On" declared implicitly
+..\Main\ht6xxx_it.c:                                    SystemTick_Interrupt_On();
+..\Main\ht6xxx_it.c:                                    ^
+..\Main\ht6xxx_it.c: ..\Main\ht6xxx_it.c: 3 warnings, 0 errors
+compiling bit_edge.c...
+..\Users\bit_edge.c(67): warning:  #940-D: missing return statement at end of non-void function "DTbitGet"
+..\Users\bit_edge.c:   }
+..\Users\bit_edge.c:   ^
+..\Users\bit_edge.c(91): warning:  #111-D: statement is unreachable
+..\Users\bit_edge.c:     bInt_Ms = 0;
+..\Users\bit_edge.c:     ^
+..\Users\bit_edge.c: ..\Users\bit_edge.c: 2 warnings, 0 errors
+compiling soft_timer_Filter.c...
+..\Users\soft_timer_Filter.c(8): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\soft_timer_Filter.c:     unsigned char i, j, n;
+..\Users\soft_timer_Filter.c:                      ^
+..\Users\soft_timer_Filter.c(8): warning:  #177-D: variable "n" was declared but never referenced
+..\Users\soft_timer_Filter.c:     unsigned char i, j, n;
+..\Users\soft_timer_Filter.c:                         ^
+..\Users\soft_timer_Filter.c: ..\Users\soft_timer_Filter.c: 2 warnings, 0 errors
+compiling dfinit.c...
+..\Users\dfinit.c(157): warning:  #68-D: integer conversion resulted in a change of sign
+..\Users\dfinit.c:      { 0, 0, 114, 433, -6067, -660 },                                                //      RTCSet(71315第二版)
+..\Users\dfinit.c:                        ^
+..\Users\dfinit.c(157): warning:  #68-D: integer conversion resulted in a change of sign
+..\Users\dfinit.c:      { 0, 0, 114, 433, -6067, -660 },                                                //      RTCSet(71315第二版)
+..\Users\dfinit.c:                               ^
+..\Users\FileSet.h(343): warning:  #1296-D: extended constant initialiser used
+..\Users\FileSet.h:     NORM_COPY(&vRamData.RTCTime, _RET_|4),
+..\Users\FileSet.h:     ^
+..\Users\FileSet.h: ..\Users\dfinit.c: 3 warnings, 0 errors
+compiling unit_instance.c...
+..\Users\unit_instance.c(12): warning:  #1296-D: extended constant initialiser used
+..\Users\unit_instance.c:   const unsigned long  csBitstruct = (unsigned long )(&bbitstatu);
+..\Users\unit_instance.c:                                                      ^
+..\Users\unit_instance.c: ..\Users\unit_instance.c: 1 warning, 0 errors
+compiling emu.c...
+..\Users\emu.c(224): warning:  #177-D: variable "i" was declared but never referenced
+..\Users\emu.c:   {unsigned short i ; 
+..\Users\emu.c:                   ^
+..\Users\emu.c(522): warning:  #111-D: statement is unreachable
+..\Users\emu.c:         if(emu_cal_mode!=0)
+..\Users\emu.c:         ^
+..\Users\emu.c(482): warning:  #177-D: variable "iInit" was declared but never referenced
+..\Users\emu.c:         static          short           iInit = FALSE;
+..\Users\emu.c:                                         ^
+..\Users\emu.c(819): warning:  #550-D: variable "j" was set but never used
+..\Users\emu.c:     uint8_t i,j,len;
+..\Users\emu.c:               ^
+..\Users\emu.c(844): warning:  #223-D: function "open_pll_tmp" declared implicitly
+..\Users\emu.c:         open_pll_tmp();
+..\Users\emu.c:         ^
+..\Users\emu.c(980): warning:  #177-D: variable "itemp" was declared but never referenced
+..\Users\emu.c:         unsigned short itemp ;
+..\Users\emu.c:                        ^
+..\Users\emu.c(1024): warning:  #177-D: variable "itemp" was declared but never referenced
+..\Users\emu.c:         unsigned short itemp ;
+..\Users\emu.c:                        ^
+..\Users\emu.c(1067): warning:  #177-D: variable "itemp" was declared but never referenced
+..\Users\emu.c:         unsigned short itemp ;  //              0.5L点校表标志
+..\Users\emu.c:                        ^
+..\Users\emu.c(1068): warning:  #177-D: variable "ltemp" was declared but never referenced
+..\Users\emu.c:         unsigned long ltemp;
+..\Users\emu.c:                       ^
+..\Users\emu.c(1108): warning:  #177-D: variable "itemp" was declared but never referenced
+..\Users\emu.c:         unsigned short itemp ;
+..\Users\emu.c:                        ^
+..\Users\emu.c(1110): warning:  #177-D: variable "ltemp1" was declared but never referenced
+..\Users\emu.c:         unsigned long           ltemp1 =(unsigned long ) FData.DftSet.kWhImp * emu_ecr_reg.ECR.HFconst; 
+..\Users\emu.c:                                 ^
+..\Users\emu.c(1156): warning:  #223-D: function "BlockEarse" declared implicitly
+..\Users\emu.c:          ctemp =        BlockEarse (&stDianLian1, (unsigned long )&stChipSet);
+..\Users\emu.c:                         ^
+..\Users\emu.c(1157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+..\Users\emu.c:                 HT_Flash_ByteWrite ((char *)&stchiptemp,(unsigned long )&stChipSet,sizeof(struct        STCHIPSET));
+..\Users\emu.c:                                     ^
+..\Users\emu.c(1162): warning:  #1-D: last line of file ends without a newline
+..\Users\emu.c:   }
+..\Users\emu.c:    ^
+..\Users\emu.c(1135): warning:  #550-D: variable "ctemp" was set but never used
+..\Users\emu.c:         unsigned char   ctemp;
+..\Users\emu.c:                         ^
+..\Users\emu.c(356): warning:  #177-D: function "load_emu_var_225k" was declared but never referenced
+..\Users\emu.c:   void load_emu_var_225k(void)
+..\Users\emu.c:        ^
+..\Users\emu.c(373): warning:  #177-D: function "load_emu_var_32k" was declared but never referenced
+..\Users\emu.c:   void load_emu_var_32k(void)
+..\Users\emu.c:        ^
+..\Users\emu.c(390): warning:  #177-D: function "load_emu_var_const" was declared but never referenced
+..\Users\emu.c:   void load_emu_var_const(void)
+..\Users\emu.c:        ^
+..\Users\emu.c: ..\Users\emu.c: 18 warnings, 0 errors
+compiling flash_filesystem.c...
+..\Users\flash_filesystem.c(67): warning:  #177-D: variable "i" was declared but never referenced
+..\Users\flash_filesystem.c:     unsigned short i;
+..\Users\flash_filesystem.c:                    ^
+..\Users\flash_filesystem.c(126): warning:  #513-D: a value of type "unsigned char *" cannot be assigned to an entity of type "char *"
+..\Users\flash_filesystem.c:     stemp = sp + ilen - _Receord_iNo_Len_   - _Receord_iCheckData_Len_;
+..\Users\flash_filesystem.c:           ^
+..\Users\flash_filesystem.c(128): warning:  #513-D: a value of type "unsigned char *" cannot be assigned to an entity of type "char *"
+..\Users\flash_filesystem.c:     stemp = sp + ilen -  _Receord_iCheckData_Len_;  
+..\Users\flash_filesystem.c:           ^
+..\Users\flash_filesystem.c(156): warning:  #188-D: enumerated type mixed with another type
+..\Users\flash_filesystem.c:                            enRecordstatu = Recode_CheckState ( &sttemp);
+..\Users\flash_filesystem.c:                                          ^
+..\Users\flash_filesystem.c(188): warning:  #127-D: expected a statement
+..\Users\flash_filesystem.c:       }
+..\Users\flash_filesystem.c:       ^
+..\Users\flash_filesystem.c(140): warning:  #177-D: variable "n" was declared but never referenced
+..\Users\flash_filesystem.c:     unsigned char n;
+..\Users\flash_filesystem.c:                   ^
+..\Users\flash_filesystem.c(141): warning:  #177-D: variable "enPrevState" was declared but never referenced
+..\Users\flash_filesystem.c:     enum RECORDSTATU enRecordstatu, enPrevState;
+..\Users\flash_filesystem.c:                                     ^
+..\Users\flash_filesystem.c(281): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+..\Users\flash_filesystem.c:     HT_Flash_ByteWrite ((char *) &(stCurr->iNo), lAddr + stCurr->cLen-_Receord_iCheckData_Len_     -_Receord_iNo_Len_,
+..\Users\flash_filesystem.c:                         ^
+..\Users\flash_filesystem.c(285): warning:  #940-D: missing return statement at end of non-void function "Record_Put"
+..\Users\flash_filesystem.c:   }
+..\Users\flash_filesystem.c:   ^
+..\Users\flash_filesystem.c(238): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\flash_filesystem.c:     unsigned short i, j;
+..\Users\flash_filesystem.c:                       ^
+..\Users\flash_filesystem.c(290): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\flash_filesystem.c:     unsigned short i, j;
+..\Users\flash_filesystem.c:                       ^
+..\Users\flash_filesystem.c(315): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+..\Users\flash_filesystem.c:                              HT_Flash_ByteWrite ((char *)&stChipdef,(unsigned long)(stflashdata.sEmuc), sizeof(stChipdef));
+..\Users\flash_filesystem.c:                                                  ^
+..\Users\flash_filesystem.c: ..\Users\flash_filesystem.c: 12 warnings, 0 errors
+compiling globlvar.c...
+..\Users\globlvar.c(45): warning:  #192-D: unrecognized character escape sequence
+..\Users\globlvar.c:   const char sAsk[] = "\/?!\r\n";
+..\Users\globlvar.c:                        ^
+..\Users\globlvar.c(46): warning:  #192-D: unrecognized character escape sequence
+..\Users\globlvar.c:   const char sAnswer[] = "\/AME5AMS B1B-OA3TCI  \r\n";
+..\Users\globlvar.c:                           ^
+..\Users\globlvar.c(58): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0xC10, (unsigned long) &(DftFlashInfo.SafeInfo.E_Num[2]), _lAddr_, 0},
+..\Users\globlvar.c:                             ^
+..\Users\globlvar.c(59): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0x180, (unsigned long) &((RamData.lDianL180)), _lAddr_, 0},   // (0000000.122*kWh)
+..\Users\globlvar.c:                             ^
+..\Users\globlvar.c(62): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0x280, (unsigned long) &(RamData.lDianL280), _lAddr_, 0},     // (0000000.010*kWh) 0 , 0  },// 当前反向有功总电量         
+..\Users\globlvar.c:                             ^
+..\Users\globlvar.c(63): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0xC70, (unsigned long) &(RamData.lDianL280), _Func_, 0},      //
+..\Users\globlvar.c:                             ^
+..\Users\globlvar.c(64): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0x110, (long) &(RamData.Iph.sVI), _lAddr_, 0},        //       (000.0*A)
+..\Users\globlvar.c:                    ^
+..\Users\globlvar.c(65): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     {0x120, (long) &(RamData.Vph.sVI), _lAddr_, 0},        // (221.7*V)
+..\Users\globlvar.c:                    ^
+..\Users\globlvar.c(114): warning:  #1296-D: extended constant initialiser used
+..\Users\globlvar.c:     (unsigned long) &(stflashdata.sDIAN),
+..\Users\globlvar.c:                     ^
+..\Users\globlvar.c: ..\Users\globlvar.c: 9 warnings, 0 errors
+compiling disp.c...
+..\Users\disp.c(106): warning:  #177-D: variable "lBit" was declared but never referenced
+..\Users\disp.c:        u32     lBit;
+..\Users\disp.c:                ^
+..\Users\disp.c(135): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+..\Users\disp.c:                                        UpdateDisp((unsigned char *)RamData.Disp.DispData);
+..\Users\disp.c:                                                   ^
+..\Users\disp.c(164): warning:  #1-D: last line of file ends without a newline
+..\Users\disp.c:        
+..\Users\disp.c:        ^
+..\Users\disp.c: ..\Users\disp.c: 3 warnings, 0 errors
+compiling lcdio.c...
+..\Users\lcdio.c(109): warning:  #1-D: last line of file ends without a newline
+..\Users\lcdio.c:       
+..\Users\lcdio.c:       ^
+..\Users\lcdio.c: ..\Users\lcdio.c: 1 warning, 0 errors
+compiling gpio.c...
+..\Users\gpio.c(34): warning:  #177-D: variable "GPIO_InitAFStructure" was declared but never referenced
+..\Users\gpio.c:     GPIO_InitAFTypeDef GPIO_InitAFStructure;
+..\Users\gpio.c:                        ^
+..\Users\gpio.c(53): warning:  #177-D: variable "GPIO_InitAFStructure" was declared but never referenced
+..\Users\gpio.c:     GPIO_InitAFTypeDef GPIO_InitAFStructure;
+..\Users\gpio.c:                        ^
+..\Users\gpio.c: ..\Users\gpio.c: 2 warnings, 0 errors
+compiling pmu.c...
+..\Users\pmu.c(91): warning:  #1-D: last line of file ends without a newline
+..\Users\pmu.c:         
+..\Users\pmu.c:         ^
+..\Users\pmu.c: ..\Users\pmu.c: 1 warning, 0 errors
+compiling cmd_flashoper.c...
+..\Users\cmd_flashoper.c(49): warning:  #223-D: function "checkaddr" declared implicitly
+..\Users\cmd_flashoper.c:       if (SUCCESS != checkaddr(laddr ))
+..\Users\cmd_flashoper.c:                      ^
+..\Users\cmd_flashoper.c(38): warning:  #177-D: variable "w" was declared but never referenced
+..\Users\cmd_flashoper.c:       char **w ;
+..\Users\cmd_flashoper.c:              ^
+..\Users\cmd_flashoper.c(95): warning:  #223-D: function "checkaddr" declared implicitly
+..\Users\cmd_flashoper.c:       if (SUCCESS != checkaddr(laddr ))
+..\Users\cmd_flashoper.c:                      ^
+..\Users\cmd_flashoper.c(124): warning:  #111-D: statement is unreachable
+..\Users\cmd_flashoper.c:     return SUCCESS;
+..\Users\cmd_flashoper.c:     ^
+..\Users\cmd_flashoper.c(76): warning:  #177-D: variable "w" was declared but never referenced
+..\Users\cmd_flashoper.c:       char **w ;
+..\Users\cmd_flashoper.c:              ^
+..\Users\cmd_flashoper.c(155): warning:  #223-D: function "emu_refresh" declared implicitly
+..\Users\cmd_flashoper.c:               emu_refresh( &stChipdef, sizeof(stChipdef.stChipreg)/sizeof(stChipdef.stChipreg[0]));
+..\Users\cmd_flashoper.c:               ^
+..\Users\cmd_flashoper.c(167): warning:  #223-D: function "Chip_Trim_IB" declared implicitly
+..\Users\cmd_flashoper.c:               Chip_Trim_IB();
+..\Users\cmd_flashoper.c:               ^
+..\Users\cmd_flashoper.c(196): warning:  #226-D: invalid format string conversion
+..\Users\cmd_flashoper.c:                       fprintf(((FILE *)_Uart_Handle_), "%zhz_dianliang=%d,imp=%d,fxz_dianliang=%d,imp=%d\r\n",RamData.LVSave[0].SumUse.Use,RamData.LVSave[0].SumUse.Imp,RamData.LVSave[0].SumUse.RevUse,RamData.LVSave[0].SumUse.RevImp);
+..\Users\cmd_flashoper.c:                                                                                                               ^
+..\Users\cmd_flashoper.c(200): warning:  #1-D: last line of file ends without a newline
+..\Users\cmd_flashoper.c:   }
+..\Users\cmd_flashoper.c:    ^
+..\Users\cmd_flashoper.c(132): warning:  #177-D: variable "i" was declared but never referenced
+..\Users\cmd_flashoper.c:     unsigned char i;
+..\Users\cmd_flashoper.c:                   ^
+..\Users\cmd_flashoper.c(134): warning:  #177-D: variable "w" was declared but never referenced
+..\Users\cmd_flashoper.c:       char **w ;
+..\Users\cmd_flashoper.c:              ^
+..\Users\cmd_flashoper.c: ..\Users\cmd_flashoper.c: 11 warnings, 0 errors
+compiling cmd_ramoper.c...
+..\Users\cmd_ramoper.c(50): warning:  #223-D: function "getladdr" declared implicitly
+..\Users\cmd_ramoper.c:     if (ERROR == getladdr (_incmdtext1,4, &laddr))
+..\Users\cmd_ramoper.c:                  ^
+..\Users\cmd_ramoper.c(88): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+..\Users\cmd_ramoper.c:                                          HT_Flash_ByteWrite (stemp, laddr, cLen);
+..\Users\cmd_ramoper.c:                                                              ^
+..\Users\cmd_ramoper.c(31): warning:  #177-D: variable "x" was declared but never referenced
+..\Users\cmd_ramoper.c:     u8 i, x;
+..\Users\cmd_ramoper.c:           ^
+..\Users\cmd_ramoper.c(32): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\cmd_ramoper.c:     u16 j;
+..\Users\cmd_ramoper.c:         ^
+..\Users\cmd_ramoper.c(35): warning:  #177-D: variable "shelp" was declared but never referenced
+..\Users\cmd_ramoper.c:     const char shelp[] =
+..\Users\cmd_ramoper.c:                ^
+..\Users\cmd_ramoper.c(39): warning:  #177-D: variable "cvalue" was declared but never referenced
+..\Users\cmd_ramoper.c:     char cvalue,ctemp;
+..\Users\cmd_ramoper.c:          ^
+..\Users\cmd_ramoper.c(142): warning:  #1-D: last line of file ends without a newline
+..\Users\cmd_ramoper.c:   */
+..\Users\cmd_ramoper.c:     ^
+..\Users\cmd_ramoper.c: ..\Users\cmd_ramoper.c: 7 warnings, 0 errors
+compiling cmdthread.c...
+..\Users\cmdthread.c(42): warning:  #144-D: a value of type "unsigned char *" cannot be used to initialize an entity of type "char *"
+..\Users\cmdthread.c:   char *sresult = USARTCOM[_IR_Chanel_].DataBuf;
+..\Users\cmdthread.c:                   ^
+..\Users\cmdthread.c(118): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Users\cmdthread.c:     if ((i >= 0) && (i < 10))
+..\Users\cmdthread.c:            ^
+..\Users\cmdthread.c(147): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Users\cmdthread.c:                            if (( laddr >=0 ) && (laddr < 0x20000 ))
+..\Users\cmdthread.c:                                        ^
+..\Users\cmdthread.c(174): warning:  #177-D: variable "ltemp" was declared but never referenced
+..\Users\cmdthread.c:           unsigned long ltemp , ltemp1 ; 
+..\Users\cmdthread.c:                         ^
+..\Users\cmdthread.c(198): warning:  #177-D: variable "ltemp" was declared but never referenced
+..\Users\cmdthread.c:           unsigned long ltemp , ltemp1 ; 
+..\Users\cmdthread.c:                         ^
+..\Users\cmdthread.c(198): warning:  #177-D: variable "ltemp1" was declared but never referenced
+..\Users\cmdthread.c:           unsigned long ltemp , ltemp1 ; 
+..\Users\cmdthread.c:                                 ^
+..\Users\cmdthread.c(199): warning:  #177-D: variable "stemp" was declared but never referenced
+..\Users\cmdthread.c:           char    stemp[32];
+..\Users\cmdthread.c:                   ^
+..\Users\cmdthread.c(200): warning:  #177-D: variable "w" was declared but never referenced
+..\Users\cmdthread.c:           char **w ; 
+..\Users\cmdthread.c:                  ^
+..\Users\cmdthread.c(201): warning:  #177-D: variable "i" was declared but never referenced
+..\Users\cmdthread.c:           unsigned char i ; 
+..\Users\cmdthread.c:                         ^
+..\Users\cmdthread.c(239): warning:  #144-D: a value of type "unsigned char *" cannot be used to initialize an entity of type "char *"
+..\Users\cmdthread.c:                   char *p = ( unsigned char *)&lvalue ; 
+..\Users\cmdthread.c:                             ^
+..\Users\cmdthread.c(237): warning:  #177-D: variable "y" was declared but never referenced
+..\Users\cmdthread.c:                   char             x , y ; 
+..\Users\cmdthread.c:                                        ^
+..\Users\cmdthread.c(275): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+..\Users\cmdthread.c:             format_cmd (USARTCOM[i].DataBuf, clen);
+..\Users\cmdthread.c:                         ^
+..\Users\cmdthread.c(269): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\cmdthread.c:     unsigned char i, j;
+..\Users\cmdthread.c:                      ^
+..\Users\cmdthread.c: ..\Users\cmdthread.c: 13 warnings, 0 errors
+compiling formatcmd.c...
+..\Users\formatcmd.c(71): warning:  #940-D: missing return statement at end of non-void function "format_cmd"
+..\Users\formatcmd.c:   }
+..\Users\formatcmd.c:   ^
+..\Users\formatcmd.c(46): warning:  #177-D: variable "j" was declared but never referenced
+..\Users\formatcmd.c:           u8 i ,j;
+..\Users\formatcmd.c:                 ^
+..\Users\formatcmd.c: ..\Users\formatcmd.c: 2 warnings, 0 errors
+compiling uartio.c...
+..\Users\uartio.h(19): warning:  #1295-D: Deprecated declaration UART_init - give arg types
+..\Users\uartio.h:   void UART_init ();
+..\Users\uartio.h:        ^
+..\Users\uartio.c(177): warning:  #223-D: function "SystemTick_Interrupt_Off" declared implicitly
+..\Users\uartio.c:     SystemTick_Interrupt_Off ();
+..\Users\uartio.c:     ^
+..\Users\uartio.c(193): warning:  #223-D: function "SystemTick_Interrupt_On" declared implicitly
+..\Users\uartio.c:     SystemTick_Interrupt_On ();
+..\Users\uartio.c:     ^
+..\Users\uartio.c(199): warning:  #177-D: variable "unitp" was declared but never referenced
+..\Users\uartio.c:     HT_UART_TypeDef *unitp = stcomlist[i].unitp;
+..\Users\uartio.c:                      ^
+..\Users\uartio.c(208): warning:  #177-D: variable "unitp" was declared but never referenced
+..\Users\uartio.c:     HT_UART_TypeDef *unitp = stcomlist[i].unitp;
+..\Users\uartio.c:                      ^
+..\Users\uartio.c(240): warning:  #940-D: missing return statement at end of non-void function "fputc"
+..\Users\uartio.c:   }
+..\Users\uartio.c:   ^
+..\Users\uartio.c: ..\Users\uartio.c: 6 warnings, 0 errors
+compiling systickapp.c...
+..\Users\uartio.h(19): warning:  #1295-D: Deprecated declaration UART_init - give arg types
+..\Users\uartio.h:   void UART_init ();
+..\Users\uartio.h:        ^
+..\Users\systickapp.c(59): warning:  #550-D: variable "clr" was set but never used
+..\Users\systickapp.c:          uint32_t clr;
+..\Users\systickapp.c:                   ^
+..\Users\systickapp.c(60): warning:  #177-D: variable "s" was declared but never referenced
+..\Users\systickapp.c:          static uint32_t s = 0;
+..\Users\systickapp.c:                          ^
+..\Users\systickapp.c(75): warning:  #223-D: function "OnLine_Dete" declared implicitly
+..\Users\systickapp.c:                    OnLine_Dete ();
+..\Users\systickapp.c:                    ^
+..\Users\systickapp.c(105): warning:  #1-D: last line of file ends without a newline
+..\Users\systickapp.c:          }
+..\Users\systickapp.c:           ^
+..\Users\systickapp.c: ..\Users\systickapp.c: 5 warnings, 0 errors
+compiling core_cm0.c...
+compiling system_ht6xxx.c...
+compiling ht6xxx_cmu.c...
+compiling ht6xxx_exti.c...
+compiling ht6xxx_flash.c...
+compiling ht6xxx_gpio.c...
+compiling ht6xxx_iic.c...
+compiling ht6xxx_lcd.c...
+compiling ht6xxx_pmu.c...
+compiling ht6xxx_reset.c...
+compiling ht6xxx_rtc.c...
+compiling ht6xxx_spi.c...
+compiling ht6xxx_tbs.c...
+compiling ht6xxx_timer.c...
+compiling ht6xxx_uart&7816.c...
+compiling ht6xxx_tdes&rand.c...
+compiling ht6xxx_aes&rand.c...
+compiling ht6xxx_dma.c...
+compiling ht501x_emu.c...
+compiling ht501x_keyscan.c...
+assembling startup_ht501x.s...
+compiling example.c...
+compiling aes_example.c...
+linking...
+Program Size: Code=23360 RO-data=41152 RW-data=88 ZI-data=2512  
+FromELF: creating hex file...
+"HT60xx.axf" - 0 Error(s), 136 Warning(s).
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Set JLink Project File to "C:\worktop\meter_SX501902\software\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20180117 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: No matching core found.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+***JLink Error: Parity error (Data = 0xFFFFFFFF, ReceivedParity = 1)
+***JLink Error: Could not start CPU core. (ErrorCode: -1)
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Set JLink Project File to "C:\worktop\meter_SX501902\software\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20180117 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: No matching core found.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+**JLink Warning: S_RESET_ST not cleared
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+**JLink Warning: S_RESET_ST not cleared
+***JLink Error: Parity error (Data = 0xFFFFFFFF, ReceivedParity = 1)
+***JLink Error: Could not start CPU core. (ErrorCode: -1)
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Set JLink Project File to "C:\worktop\meter_SX501902\software\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20180117 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: No matching core found.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: CPU did not halt after reset.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: CPU halted
+**JLink Warning: CPU did not halt after reset.
+***JLink Error: SWD-DP error: Could not write Ctrl/Stat register.
+CPU not halted
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Set JLink Project File to "C:\worktop\meter_SX501902\software\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20180117 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: No matching core found.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core is locked-up, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+**JLink Warning: CPU did not halt after reset.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: CPU did not halt after reset.
+***JLink Error: Parity error (Data = 0x6069E060, ReceivedParity = 0)
+CPU not halted
+Load "C:\\worktop\\meter_SX501902\\software\\Project\\HT60xx.AXF" 
+Set JLink Project File to "C:\worktop\meter_SX501902\software\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20180117 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+**JLink Warning: No matching core found.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+**JLink Warning: CPU did not halt after reset.
+* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
+**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+* JLink Info: CPU core locked up
+* JLink Info: Can not halt CPU
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+* JLink Info: Core did not halt after reset, trying to disable WDT.
+**JLink Warning: T-bit of XPSR is 0 but should be 1. Changed to 1.
+**JLink Warning: CPU did not halt after reset.
+***JLink Error: Parity error (Data = 0x60202020, ReceivedParity = 0)
+CPU not halted

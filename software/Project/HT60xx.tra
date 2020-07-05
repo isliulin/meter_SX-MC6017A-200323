@@ -1,0 +1,60 @@
+*** Creating Trace Output File 'HT60xx.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"ht6xxx_it.o"'
+### List of Objects: adding '"bit_edge.o"'
+### List of Objects: adding '"soft_timer_filter.o"'
+### List of Objects: adding '"dfinit.o"'
+### List of Objects: adding '"unit_instance.o"'
+### List of Objects: adding '"emu.o"'
+### List of Objects: adding '"flash_filesystem.o"'
+### List of Objects: adding '"globlvar.o"'
+### List of Objects: adding '"disp.o"'
+### List of Objects: adding '"lcdio.o"'
+### List of Objects: adding '"gpio.o"'
+### List of Objects: adding '"pmu.o"'
+### List of Objects: adding '"cmd_flashoper.o"'
+### List of Objects: adding '"cmd_ramoper.o"'
+### List of Objects: adding '"cmdthread.o"'
+### List of Objects: adding '"formatcmd.o"'
+### List of Objects: adding '"uartio.o"'
+### List of Objects: adding '"systickapp.o"'
+### List of Objects: adding '"core_cm0.o"'
+### List of Objects: adding '"system_ht6xxx.o"'
+### List of Objects: adding '"ht6xxx_cmu.o"'
+### List of Objects: adding '"ht6xxx_exti.o"'
+### List of Objects: adding '"ht6xxx_flash.o"'
+### List of Objects: adding '"ht6xxx_gpio.o"'
+### List of Objects: adding '"ht6xxx_iic.o"'
+### List of Objects: adding '"ht6xxx_lcd.o"'
+### List of Objects: adding '"ht6xxx_pmu.o"'
+### List of Objects: adding '"ht6xxx_reset.o"'
+### List of Objects: adding '"ht6xxx_rtc.o"'
+### List of Objects: adding '"ht6xxx_spi.o"'
+### List of Objects: adding '"ht6xxx_tbs.o"'
+### List of Objects: adding '"ht6xxx_timer.o"'
+### List of Objects: adding '"ht6xxx_uart&7816.o"'
+### List of Objects: adding '"ht6xxx_tdes&rand.o"'
+### List of Objects: adding '"ht6xxx_aes&rand.o"'
+### List of Objects: adding '"ht6xxx_dma.o"'
+### List of Objects: adding '"ht501x_emu.o"'
+### List of Objects: adding '"ht501x_keyscan.o"'
+### List of Objects: adding '".\startup_ht501x.o"'
+### List of Objects: adding '"example.o"'
+### List of Objects: adding '"aes_example.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 "main.o" "ht6xxx_it.o" "bit_edge.o" "soft_timer_filter.o" "dfinit.o" "unit_instance.o" "emu.o" "flash_filesystem.o" "globlvar.o" "disp.o" "lcdio.o" "gpio.o" "pmu.o" "cmd_flashoper.o" "cmd_ramoper.o" "cmdthread.o" "formatcmd.o" "uartio.o" "systickapp.o" "core_cm0.o" "system_ht6xxx.o" "ht6xxx_cmu.o" "ht6xxx_exti.o" "ht6xxx_flash.o" "ht6xxx_gpio.o" "ht6xxx_iic.o" "ht6xxx_lcd.o" "ht6xxx_pmu.o" "ht6xxx_reset.o" "ht6xxx_rtc.o" "ht6xxx_spi.o" "ht6xxx_tbs.o" "ht6xxx_timer.o" "ht6xxx_uart&7816.o" "ht6xxx_tdes&rand.o" "ht6xxx_aes&rand.o" "ht6xxx_dma.o" "ht501x_emu.o" "ht501x_keyscan.o" ".\startup_ht501x.o" "example.o" "aes_example.o" --library_type=microlib --strict --scatter "HT60xx.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\HT60xx.map" -o "HT60xx.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'HT60xx.axf'
+### ADS-LD Command File: 'HT60xx.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'HT60xx.lnp', Handle=0x00000708
+### Writing '.lnp' file
+### ADS-LD Command file 'HT60xx.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
