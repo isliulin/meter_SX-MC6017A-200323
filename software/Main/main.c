@@ -21,15 +21,14 @@
 #include <stdio.h>
 #include "ht6xxx_lib.h"
 #include "aes_example.h"
-#include "formatstring.h"
+//#include "formatstring.h"
 #include "streamio.h"
 #include "bit_edge.h"
-#include "emu.h"
+//#include "emu.h"
 #include "pubset.h"
  
 #include "flash_filesystem.h"
-
- #include "eeprom.h"
+#include "eeprom.h"
  
  
 
@@ -102,6 +101,9 @@ extern const unsigned char cnmagnetismc ;	//       电量保存定时器延时设置
 
  int
 Rtc_Get_callback (char *TimeBase) ;
+		  int main(void)
+		  {}
+#ifdef _DEL
 int main(void)                                   
 {     
 	
@@ -305,8 +307,8 @@ void CMU_Init()
     CMU_InitStructure.CPUDiv = CPUDiv2;
 
     HT_CMU_Init(&CMU_InitStructure);
-		HT_CMU->WPREG = 0xA55A;
-		HT_CMU->CLKCTRL0 |=	CMU_CLKCTRL0_EMUEN ;
+	//	HT_CMU->WPREG = 0xA55A;
+//		HT_CMU->CLKCTRL0 |=	CMU_CLKCTRL0_EMUEN ;
 	 
 	  
 	 delay(0x5fff);
@@ -374,7 +376,7 @@ void	Do_Use(void)
 	u32	Inc;
 	u32	SInc;
 	u8 cImpbuf;
-
+					
 	RamData.ImpBfr = Read_EPADR(EPR_EnergyPC );
 	if ( 0 == RamData.ImpBfr ) return ; 
 	cparToB(Event_Rev , _bREVP  )	;
@@ -436,7 +438,7 @@ void	Do_Use(void)
 //	if(AInc){														//有功电量变化处理
 //		ChkUseState();
 //	}
-		
+	
 }//#endif		//_USE_CARD_
 	
 	
@@ -587,7 +589,7 @@ Rtc_Get_callback (char *TimeBase)
 	//HT_RTC_Read(TimeBase);
   return SUCCESS;
 }
-
+   #endif 
 /*
 void	Do_MinTask(void){
 

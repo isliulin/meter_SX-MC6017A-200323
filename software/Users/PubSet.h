@@ -10,7 +10,8 @@
 
 //-----------------------------------------------------------------------------
 
-//#include	"options.h" // Define the IC hardware, CE code and options.
+#include "streamio.h"
+
 //#include	"lcd.h"
 //#include	"afe.h"
 #include "globlvar_debug.h"

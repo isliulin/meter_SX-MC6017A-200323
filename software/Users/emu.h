@@ -222,7 +222,7 @@ extern uint32_t fast_rmsi1;
 extern uint8_t hold_flag;
 extern uint32_t energyP;
 
-#define 	_bREVP			(HT_EMUECA->EMUSR & 0x1 )	//反向有功功率指示标识信号，当检测到负有功功率时，该信号为1。当再次检测到正有功功率时，该信号为0。在PF发脉冲时更新该值。
+#define 	_bREVP	(0)  //		(HT_EMUECA->EMUSR & 0x1 )	//反向有功功率指示标识信号，当检测到负有功功率时，该信号为1。当再次检测到正有功功率时，该信号为0。在PF发脉冲时更新该值。
 
 /********************* 全局函数声明 ***********************************/
 void emu_init (void);
